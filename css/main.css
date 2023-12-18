@@ -1,0 +1,128 @@
+:root {
+    /* custom properties */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(204, 43%, 93%);
+    --cyan: hsl(179, 62%, 43%);
+    --off-cyan: hsla(179, 62%, 43%, 0.699);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    /* font-family 400 y 700*/
+    font-size: 62.5%;
+    font-family: 'Karla', sans-serif;
+    /* centrar cards */
+    display: grid;
+    place-content: center;
+    background-color: var(--light-gray);
+    padding: 30px;
+}
+
+/* size texts */
+h1,
+h2 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* cards-container */
+.single-container {
+    width: 320px;
+    min-width: 320px;
+    border-radius: 5px;
+}
+
+/* sections */
+.section {
+    padding: 25px 20px;
+}
+
+/* section one */
+.section-one {
+    background-color: var(--white);
+}
+
+.section-one h1 {
+    color: var(--cyan);
+    padding-bottom: 15px;
+}
+
+.section-one p:first-of-type {
+    color: var(--bright-yellow);
+    padding-bottom: 15px;
+}
+
+.section-one p:last-of-type {
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+
+/* section two */
+.section-two {
+    background-color: var(--cyan);
+}
+
+.section-two h2 {
+    color: var(--white);
+    padding-bottom: 15px;
+}
+
+.section-two p:first-of-type {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.section-two p:first-of-type span {
+    font-size: 0.9rem;
+    color: var(--light-gray);
+}
+
+.section-two p:last-of-type {
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+/* button */
+.section-two button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: var(--bright-yellow);
+    color: var(--white);
+}
+
+/* section three */
+.section-three {
+    background-color: var(--off-cyan);
+}
+
+.section-three h2 {
+    color: var(--white);
+    padding-bottom: 15px;
+}
+
+.section-three p {
+    color: var(--light-gray);
+}
