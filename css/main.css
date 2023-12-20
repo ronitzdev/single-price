@@ -45,8 +45,8 @@ p {
 
 /* cards-container */
 .single-container {
-    width: 320px;
     min-width: 320px;
+    max-width: 640px;
     border-radius: 5px;
 }
 
